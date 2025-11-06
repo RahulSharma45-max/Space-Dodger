@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Dodger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="space-bg"></div>
+    <div class="stars" id="stars"></div>
+    <div class="game-wrapper">
+        <div class="game-container">
+            <div class="score-board">
+                <div class="score-item">
+                    <div class="score-label">SCORE</div>
+                    <div class="score-value" id="currentScore">0</div>
+                </div>
+                <div class="score-item">
+                    <div class="score-label">HIGH SCORE</div>
+                    <div class="score-value" id="highScore">0</div>
+                </div>
+            </div>
+
+            <canvas id="gameCanvas" width="500" height="600"></canvas>
+
+            <div class="touch-controls">
+                <button class="touch-btn" id="leftBtn">←</button>
+                <button class="touch-btn" id="rightBtn">→</button>
+            </div>
+
+            <div class="controls-info">
+                Use <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd> keys to move
+            </div>
+
+            <div class="game-over-screen" id="gameOverScreen">
+                <h2>GAME OVER</h2>
+                <div class="new-high-score" id="newHighScore" style="display: none;">
+                    🏆 NEW HIGH SCORE! 🏆
+                </div>
+                <div class="final-score">
+                    Final Score: <span id="finalScore">0</span>
+                </div>
+                <button class="restart-btn" id="restartBtn">PLAY AGAIN</button>
+                <div class="game-over-footer">
+                    Made with <span class="footer-heart">❤</span> by Rahul Sharma
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
